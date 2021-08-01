@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <form action="" name="calculator">
+        <input type="text" name="Screen">
+        <hr>
+        <input type="button" value="&radic;" onclick="calculator.Screen.value = Math.sqrt(calculator.Screen.value)">
+        <input type="button" value="CE" onclick="calculator.Screen.value = ' '">
+        <input type="button" value="C" onclick="calculator.Screen.value = ' '">
+        <input type="button" value="&larr;" onclick="calculator.Screen.value = calculator.Screen.value.slice(0,-1)">
+        <br>
+        <input type="button" value="7" onclick="calculator.Screen.value += '7'">
+        <input type="button" value="8" onclick="calculator.Screen.value += '8'">
+        <input type="button" value="9" onclick="calculator.Screen.value += '9'">
+        <input type="button" value="+" onclick="calculator.Screen.value += '+'">
+        <br>
+        <input type="button" value="4" onclick="calculator.Screen.value += '4'">
+        <input type="button" value="5" onclick="calculator.Screen.value += '5'">
+        <input type="button" value="6" onclick="calculator.Screen.value += '6'">
+        <input type="button" value="-" onclick="calculator.Screen.value += '-'">
+        <br>
+        <input type="button" value="1" onclick="calculator.Screen.value += '1'">
+        <input type="button" value="2" onclick="calculator.Screen.value += '2'">
+        <input type="button" value="3" onclick="calculator.Screen.value += '3'">
+        <input type="button" value="*" onclick="calculator.Screen.value += '*'">
+        <br>
+        <input type="button" value="0" onclick="calculator.Screen.value += '0'">
+        <input type="button" value="." onclick="calculator.Screen.value += '.'">
+        <input type="button" value="=" onclick="calculator.Screen.value =eval(calculator.Screen.value)">
+        <input type="button" value="/" onclick="calculator.Screen.value += '/'">
+    </form>
+</body>
+</html>
